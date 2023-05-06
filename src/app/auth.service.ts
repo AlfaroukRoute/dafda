@@ -10,9 +10,9 @@ export class AuthService {
 token!:string
 key:string='580f4a457a7dd480b0592ac9ccc32be9';
 
-  constructor(private _HttpClient:HttpClient,private _Router:Router) {
-    this.token=localStorage.getItem('token')||""
-   }
+  // constructor(private _HttpClient:HttpClient,private _Router:Router) {
+  //   this.token=localStorage.getItem('token')||""
+  //  }
 
   register(userData:object):Observable<any>
   {
